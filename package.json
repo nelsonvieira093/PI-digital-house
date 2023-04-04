@@ -1,15 +1,30 @@
 {
   "name": "nelsoneltro",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "moment": "^2.29.4"
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "moment": "^2.29.4",
+    "sequelize": "^6.30.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nelsonvieira093/PI-digital-house.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nelsonvieira093/PI-digital-house/issues"
+  },
+  "homepage": "https://github.com/nelsonvieira093/PI-digital-house#readme",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }
