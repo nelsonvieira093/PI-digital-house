@@ -8,6 +8,8 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.get('/index', indexController.requererIndex);
+app.get('/contato', indexController.requererContato);
+
 
 app.listen(porta, () => {
     console.log('Servidor rodando na porta 1234')

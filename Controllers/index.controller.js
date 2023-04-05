@@ -4,4 +4,14 @@ function requererIndex(req, res){
     res.render('Index', { dados })
 };
 
-module.exports = {requererIndex}
+function requererContato(req, res){
+    let dados = ["dados a exibir"];
+
+    res.render('Contato', { dados })
+};
+
+
+module.exports = {
+    requererIndex,
+    requererContato
+}
