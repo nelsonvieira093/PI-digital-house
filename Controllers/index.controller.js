@@ -1,13 +1,9 @@
 function requererIndex(req, res){
-    let dados = ["dados a exibir"];
-
-    res.render('Index', { dados })
+    res.render('Index')
 };
 
 function requererContato(req, res){
-    let dados = ["dados a exibir"];
-
-    res.render('Contato', { dados })
+    res.render('Contato')
 };
 
 

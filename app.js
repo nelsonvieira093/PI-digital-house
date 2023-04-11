@@ -7,6 +7,8 @@ const indexController = require('./Controllers/index.controller')
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
+app.use(express.static(path.join(__dirname, 'css')));
+
 app.get('/index', indexController.requererIndex);
 app.get('/contato', indexController.requererContato);
 
