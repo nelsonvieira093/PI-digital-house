@@ -19,5 +19,14 @@ let exibir_todos = () => {
 let destaque = (imagem) => {
   console.log(imagem);
   if (imagem.width == 240) imagem.width = 120;
-  else imagem.width = 240;
+  else imagem.width = 240;   
 };
+
+let carrinho = (comprar) => {
+  window.location = "carrinho.html";
+
+}
+
+sessionStorage.nome = document.getElementById("um").innerHTML;
+sessionStorage.valor = document.getElementById("pum").innerHTML;
+
