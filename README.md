@@ -10,3 +10,4 @@ Nosso objetivo com este projeto é mostrar nossas habilidades em desenvolvimento
 - [@emoreirasj](https://github.com/emoreirasj)
 - [@jufrancaoliv](https://github.com/jufrancaoliv)
 - [@rafadonizetti](https://github.com/rafadonizetti)
+- [@linemendonca] (https://github.com/linemendonca)
