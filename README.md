@@ -2,7 +2,7 @@
 
 Neste projeto, utilizamos diversas tecnologias como  HTML, CSS, JavaScript, Node.js, Express, MySQL para construir uma plataforma de comércio eletrônico completa.
 
-Nosso objetivo com este projeto é mostrar nossas habilidades em desenvolvimento de aplicações web, que aprendemos no curso de Desenvolvimento  Full Stack, da Digital House.
+Nosso objetivo com este projeto é mostrar nossas habilidades em desenvolvimento de aplicações web, que aprendemos no curso de Desenvolvimento Web Full Stack, da Digital House.
 ## Autores
 
 - Nelson Vieira - [@nelsonvieira093](https://github.com/nelsonvieira093)
