@@ -71,3 +71,12 @@ body{
     list-style-type: none;
     padding-right: 14px;
 }
+
+.jumbotron{
+    background-color: #13d4e6;
+
+}
+
+#jumbotronCompra{
+      background-color: #e90f85;
+}
