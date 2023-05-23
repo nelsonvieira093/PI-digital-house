@@ -6,8 +6,22 @@ function requererContato(req, res){
     res.render('contato')
 };
 
+function requererLoja(req, res){
+    res.render('loja')
+};
+
+function requererProdutos(req, res){
+    res.render('produtos')
+};
+
+function requererCarrinho(req, res){
+    res.render('carrinho')
+};
 
 module.exports = {
     requererIndex,
-    requererContato
+    requererContato,
+    requererLoja,
+    requererProdutos,
+    requererCarrinho
 }

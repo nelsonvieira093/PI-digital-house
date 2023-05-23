@@ -1,17 +1,30 @@
-require('dotenv').config()
-const { Sequelize } = require('sequelize')
+const { Sequelize, DataTypes } = require('sequelize')
+
 
 const database = new Sequelize(
-    process.env.DB_NOME,
-    process.env.DB_USUARIO,
-    process.env.DB_SENHA,
+    'eletro',
+    'root',
+    '',
     {
-        host: process.env.DB_HOST,
+        host: 'localhost',
         dialect: 'mysql'
-}
+    }
 )
 
-const tabelaDeProdutos = {}
+// DDL - Definição das tabelas
+const Produtos = database.define('produtos', {
+    nome: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    descricao: {
+        type: DataTypes.STRING,
+        allowNull: true
+    },
+    preco: DataTypes.DOUBLE,
+})
+
+
 
 try {
     database.authenticate()
@@ -22,5 +35,5 @@ catch(error) {
 }
 
 module.exports = {
-    tabelaDeProdutos
+    Produtos,
 }
