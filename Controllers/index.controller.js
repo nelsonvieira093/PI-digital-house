@@ -1,9 +1,9 @@
 function requererIndex(req, res){
-    res.render('Index')
+    res.render('index')
 };
 
 function requererContato(req, res){
-    res.render('Contato')
+    res.render('contato')
 };
 
 
