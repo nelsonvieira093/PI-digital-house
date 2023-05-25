@@ -10,3 +10,4 @@ Nosso objetivo com este projeto é mostrar nossas habilidades em desenvolvimento
 - Juliana França - [@jufrancaoliv](https://github.com/jufrancaoliv)
 - Rafael Donizetti - [@rafadonizetti](https://github.com/rafadonizetti)
 - Aline Mendonça - [@linemendonca](https://github.com/linemendonca)
+- Victor Del Greco - [@victordelgreco](https://github.com/victordelgreco)
