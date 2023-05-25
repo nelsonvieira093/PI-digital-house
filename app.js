@@ -4,8 +4,8 @@ const app = express();
 const porta = 1234;
 const path = require('path');
 const indexController = require('./Controllers/index.controller')
+const database = require('./Database/database') // importação do servidor
 
-//definição dos estáticos
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
