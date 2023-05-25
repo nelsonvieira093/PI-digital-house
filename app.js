@@ -18,7 +18,7 @@ app.get('/contato', indexController.requererContato);
 app.get('/loja', indexController.requererLoja);
 app.get('/produtos', indexController.requererProdutos);
 app.get('/carrinho', indexController.requererCarrinho);
-
+//app.get('/detalhes_produto', indexController.requererListarProdutos)
 
 app.listen(porta, () => {
     console.log('Servidor rodando na porta 1234')

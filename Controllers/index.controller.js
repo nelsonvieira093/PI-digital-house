@@ -18,10 +18,17 @@ function requererCarrinho(req, res){
     res.render('carrinho')
 };
 
+ 
+/*function requererListarProdutos (req, res){
+    res.render('detalhes_produtos')
+};
+*/
+
 module.exports = {
     requererIndex,
     requererContato,
     requererLoja,
     requererProdutos,
     requererCarrinho
+    //requererListarProdutos
 }
