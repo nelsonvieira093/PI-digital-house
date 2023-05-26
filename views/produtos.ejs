@@ -42,57 +42,20 @@
     </section>
     <div class="container">
     <div class="produtos">
-        <div class="box-produto" id="geladeira" style="display:block">
-            <img src="/images/GELADEIRA1.jpeg" width="120px" onclick="destaque(this)"><br>
-            <p class="descrição">Geladeira Brastemp Frost Free Inverse 443 litros cor Inox com Turbo Ice </p>
-            <hr>
-            <p class="descrição"><strike>R$ 6.300,00</strike>
-            </p>
-            <p class="preco">R$ 4.929,55</p>
-            <button onclick="carrinho('comprar')" type="button" class="btn btn-primary">Comprar</button>
+        <div class="col-8" style="display:flex;">
+            <% for(var produto of renderizarProdutos) {%>
+                <div class="card container text-center">
+                <img src="<%=produto.image%>" alt="">
+                <h3 class="card-title"><%=produto.nome%></h3>
+                <h6 style="text-decoration:line-through ">R$<%=produto.precoDe%></h6>
+                <h6>Por<%=produto.precoPor%></h6>
+                <button onclick="carrinho('/detalhes_produto')" type="button" class="btn btn-primary">Comprar</button>
+                <br>
+            </div>
+                <%}%>
         </div>
-       
-    <div class="produtos">
-        <div class="box-produto" id="notebook" style="display:block">
-            <img src="/images/NOTEBOOK1.jpeg" width="120px" onclick="destaque(this)"><br>
-            <p class="descrição">Notebook Gamer Acer Nitro 5 Intel Core i5 8GB - 512GB SSD 15,6” Full HD</p>
-            <hr>
-            <p class="descrição"><strike>R$ 6.500,00</strike></p>
-            <p class="preco">R$ 4.370,07</p>
-            <button onclick="carrinho('comprar')" type="button" class="btn btn-primary">Comprar</button>
-        </div>
-        
- 
-        <div class="produtos">
-        <div class="box-produto" id="lavalouca" style="display:block">
-            <img src="/images/LAVALAOUÇA1.jpeg" width="120px" onclick="destaque(this)"><br>
-            <p class="descrição">Lava-louças Brastemp 8 Serviços BLF08 - Cinza Metálico</p>
-            <hr>
-            <p class="descrição"><strike>R$ 1.869,00 </strike></p>
-            <p class="preco">R$ 1.949,00</p>
-            <button onclick="carrinho('comprar')" type="button" class="btn btn-primary">Comprar</button>
-        </div>
-        
-    <div class="produtos">
-        <div class="box-produto" id="fogao" style="display:block">
-            <img src="/images/FOGAO1.jpeg" width="120px" onclick="destaque(this)"><br>
-            <p class="descrição">Fogão 5 Bocas Mesa de Vidro Atlas Preto</p>
-            <hr>
-            <p class="descrição"><strike>R$ 1.499,00</strike>
-            </p>
-            <p class="preco">R$ 4.929,55</p>
-            <button onclick="carrinho('comprar')" type="button" class="btn btn-primary">Comprar</button>
-        </div>
-        
-    <div class="produtos">
-        <div class="box-produto" id="tv" style="display:block">
-            <img src="/images/TV1.jpeg" width="120px" onclick="destaque(this)"><br>
-            <p class="descrição">Smart TV Samsung UN50AU7700GXZD LED 4K 50" 100V/240V</p>
-            <hr>
-            <p class="descrição"><strike>R$ 3.999,00</strike></p>
-            <p class="preco">R$ 2.476,56</p>
-            <button onclick="carrinho('comprar')" type="button" class="btn btn-primary">Comprar</button>
-        </div>
+    </div>
+
        
     </div>
         

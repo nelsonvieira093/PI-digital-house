@@ -43,6 +43,7 @@ body{
 }
 .produtos img{
     text-align: center;
+    width: 20em;
 }
 
 .box-produto{

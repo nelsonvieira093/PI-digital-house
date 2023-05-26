@@ -6,7 +6,8 @@ const listaDeProdutos = [
         categoria:"Geladeira",
         descricao:"A Geladeira Brastemp Frost Free Inverse 443 litros cor Inox tem refrigerador em cima e freezer embaixo, deixando os alimentos mais utilizados sempre à mão. Com o Turbo Ice faça gelo mais rápido sempre que precisar. O modelo conta ainda com Twist Ice Advanced e Espaço Adapt",
         precoDe:6300.00,
-        precoPor:4929.55
+        precoPor:4929.55,
+        image:'https://imgs.casasbahia.com.br/12731681/1xg.jpg'
     },
     {
         id:2,
@@ -14,7 +15,8 @@ const listaDeProdutos = [
         categoria:"Notebook",
         descricao:"O notebook gamer Acer AN515-57-52LC Nitro 5 é a nova geração, com uma configuração que não treme para os jogos mais pesados. Embarque agora e prepare-se para a potência máxima. A placa de vídeo NVIDIA GeForce GTX 1650 com 4GB de memória dedicada GDDR6 traz a performance que você precisa para surpreender seus adversários e jogar com alto nível de realismo. Se é poder que você quer para chegar mais rápido ao level avançado, conte com o desempenho do processador Intel Core i5 - 11400H Six Core de 11ª geração, além dos 8GB de memória RAM tipo DDR4, expansível até 64GB",
         precoDe:6500.00,
-        precoPor:4370.07
+        precoPor:4370.07,
+        image: 'https://cdn.dooca.store/39545/products/xt1w7jqszx0e3tftxr2s4ys9wuz7eqj7xxib_1600x1600+fill_ffffff.jpg?v=1671802488'
     },
     {
         id:3,
@@ -53,4 +55,12 @@ function ListarProdutos () {
 };
 
 
-module.exports = {ListarProdutos};
+function obterProdutosPorId(idProdutos) {
+
+
+    const produtoEncontrado = listaDeProdutos.find(produto => produto.id === idProdutos);
+
+    return produtoEncontrado;
+}
+
+module.exports = {ListarProdutos, obterProdutosPorId};

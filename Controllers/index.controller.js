@@ -10,13 +10,37 @@ function requererLoja(req, res){
     res.render('loja')
 };
 
-function requererProdutos(req, res){
-    res.render('produtos')
-};
+
 
 function requererCarrinho(req, res){
+    req.ListarProdutos = res.query
     res.render('carrinho')
 };
+
+
+const {ListarProdutos} = require('../Models/produtos.model')
+
+
+const requererTodosProdutos = (req, res) => {
+    const renderizarProdutos = ListarProdutos();
+    res.render("detalhes_produto",{
+        renderizarProdutos,
+    });
+};
+
+const { obterProdutosPorId } = require('../Models/produtos.model');
+
+function requererProdutosPorId(req, res) {
+
+    
+    const  id  = req.params;
+
+    const ProdutosEncontradoPorId = obterProdutosPorId(id);
+
+    res.render("detalhes_produto",{
+        ProdutosEncontradoPorId
+    });
+}
 
  
 /*function requererListarProdutos (req, res){
@@ -28,7 +52,7 @@ module.exports = {
     requererIndex,
     requererContato,
     requererLoja,
-    requererProdutos,
-    requererCarrinho
-    //requererListarProdutos
+    requererCarrinho,
+    requererTodosProdutos,
+    requererProdutosPorId
 }
