@@ -28,18 +28,7 @@
         <main>
         <p>Os melhores descontos você encontra aqui. Selecione a categoria desejada e aproveite!</p>
     </main>
-        
-    <section class="categorias">
-        <h3>Categorias</h3>
-        <ul>
-            <li onclick="exibir_todos('todos')">Todos (25)</li>
-            <li onclick="exibir_categoria('geladeira')">Geladeira (5)</li>
-            <li onclick="exibir_categoria('fogao')">Fogão (5)</li>
-            <li onclick="exibir_categoria('tv')">Televisão (5)</li>
-            <li onclick="exibir_categoria('notebook')">Notebook (5)</li>
-            <li onclick="exibir_categoria('lavalouca')">Lava-louça (5)</li>
-        </ul>
-    </section>
+
     <div class="container">
     <div class="produtos">
         <div class="col-8" style="display:flex;">
@@ -49,7 +38,7 @@
                 <h3 class="card-title"><%=produto.nome%></h3>
                 <h6 style="text-decoration:line-through ">R$<%=produto.precoDe%></h6>
                 <h6>Por<%=produto.precoPor%></h6>
-                <button onclick="carrinho('/detalhes_produto')" type="button" class="btn btn-primary">Comprar</button>
+                <a class="button" href='/detalheDoProduto/<%=produto.id%>'>Comprar</a>
                 <br>
             </div>
                 <%}%>
@@ -66,6 +55,7 @@
         <img src="/formasdepagamento.png" alt="Formas de pagamento">
         <p>&copy; Nelson Eletro</p>
     </footer>
+    
 </body>
 
 </html>

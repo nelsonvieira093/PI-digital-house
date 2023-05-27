@@ -23,7 +23,7 @@ const {ListarProdutos} = require('../Models/produtos.model')
 
 const requererTodosProdutos = (req, res) => {
     const renderizarProdutos = ListarProdutos();
-    res.render("detalhes_produto",{
+    res.render("produtos",{
         renderizarProdutos,
     });
 };
@@ -31,18 +31,16 @@ const requererTodosProdutos = (req, res) => {
 const { obterProdutosPorId } = require('../Models/produtos.model');
 
 function requererProdutosPorId(req, res) {
-
     
-    const  id  = req.params;
-
-    const ProdutosEncontradoPorId = obterProdutosPorId(id);
-
-    res.render("detalhes_produto",{
-        ProdutosEncontradoPorId
+    const { id } = req.params.id;
+   
+    const ProdutoEncontradoPorId = obterProdutosPorId(id) ?? {};
+    
+    res.render("detalheDoProduto",{
+        ProdutoEncontradoPorId
     });
 }
 
- 
 /*function requererListarProdutos (req, res){
     res.render('detalhes_produtos')
 };

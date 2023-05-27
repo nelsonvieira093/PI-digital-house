@@ -18,8 +18,8 @@ app.get('/contato', indexController.requererContato);
 app.get('/loja', indexController.requererLoja);
 app.get('/produtos', indexController.requererTodosProdutos);
 app.get('/carrinho', indexController.requererCarrinho);
-app.get('/detalhes_produto/:id', indexController.requererProdutosPorId);
-app.get('/detalhes_produto', indexController.requererTodosProdutos);
+app.get('/detalheDoProduto/:id', indexController.requererProdutosPorId);
+app.get('/detalheDoProduto', indexController.requererTodosProdutos);
 //app.get('/detalhes_produto', indexController.requererListarProdutos)
 
 app.listen(porta, () => {
